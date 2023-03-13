@@ -8,7 +8,10 @@ int main() {
 	sort(s.begin(), s.end());
 	int index = 0;
 	do {
-		if (t == s)cout << index;
+		if (t == s) {
+			cout << index;
+			break;
+		}
 		else index++;
 	} while (next_permutation(s.begin(), s.end()));
 
