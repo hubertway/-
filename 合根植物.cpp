@@ -8,7 +8,6 @@ int  findroot(int x) {
 int main() {
     int m, n, k;
     cin >> m >> n >> k;
-    //初始化root数组，让每个点都以自己为根节点
     int sum = m * n;
     for (int i = 0; i < sum; i++) root[i] = i;
 
@@ -26,7 +25,7 @@ int main() {
 
 
 
-//以下为dfs版本
+//dfs
 #include <iostream>
 using namespace std;
 int g[1001][1001] = { 0 };
